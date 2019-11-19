@@ -1,0 +1,88 @@
+Version control System (VCS):
+
+--->Version control software keeps track of every modification to the code in a special kind of database
+
+--->Version control systems are a category of software tools that help a software team manage changes to source code over time.
+
+
+Version control helps solve these kinds of problems and provides:
+
+A complete history of every file, which enables you to go back to previous versions to analyze the source of bugs and fix problems in older versions.
+
+The ability to work on independent streams of changes, which allows you to merge that work back together and verify that your changes conflict.
+
+The ability to trace each change with a message describing the purpose and intent of the change and connect it to project management and bug tracking software.
+
+
+There are two types of VCS --- 1.Centralized 
+                               2.Deccentralized
+
+
+Centralized version control:
+
+With centralized version control systems, you have a single “central” copy of your project on a server and commit your changes to this central copy. You pull the files that you need, but you never have a full copy of your project locally. Some of the most common version control systems are centralized, including Subversion (SVN) and Perforce.
+
+
+SVN falls under centralized version control system
+
+Distributed version control:
+
+With distributed version control systems (DVCS), you don't rely on a central server to store all the versions of a project’s files. Instead, you clone a copy of a repository locally so that you have the full history of the project. Two common distributed version control systems are Git and Mercurial.
+
+While you don't have to have a central repository for your files, you may want one "central" place to keep your code so that you can share and collaborate on your project with others. That's where Bitbucket comes in. Keep a copy of your code in a repository on Bitbucket so that you and your teammates can use Git or Mercurial locally and to push and pull code.
+
+GIT falls under distributed version control system 
+
+  
+We will mainly discuss about GIT 
+
+
+
+Git is a distributed version-control system for tracking changes in source code during software developmen
+
+
+Basic git workflow :
+
+You modify files in your working tree.
+
+You selectively stage just those changes you want to be part of your next commit, which adds only those changes to the staging area.
+
+You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
+
+GIT COMMANDS :
+
+1> git init
+git config --global user.email "XXXX@XX.com"
+git config --global user.name "devops jana"
+
+
+
+
+
+1> git init ---- ogit init creates an empty Git repository or re-initializes an existing one. It basically creates a .git directory with sub directories and template files
+2> git config ---The git config command is a convenience function that is used to set Git configuration values on a global or local project level.
+
+ADD :
+
+This command updates the index using the current content found in the working tree and then prepares the content in the staging area for the next commit.
+
+Thus, after making changes to the working tree, and before running the commit command, you must use the add command to add any new or modified files to the index. For that, use the commands below:
+
+git add <directory>
+
+or
+
+git add <file>
+
+
+git pull : The git pull command fetches changes from a remote repository to a local repository.
+
+git push :This command transfers commits from your local repository to your remote repository.
+
+git status : The git status command displays the state of the working directory and the staging area
+
+git diff:Show changes between commits, commit and working tree, etc
+
+git commit : The git commit command captures a snapshot of the project's currently staged changes. ... Prior to the execution of git commit , The git add command is used to promote or 'stage' changes to the project that will be stored in a commit. These two commands git commit and git add are two of the most frequently used
+
